@@ -1,0 +1,15 @@
+<% include partials/head %>
+
+    <h1>Blog Posts</h1>
+
+    <section class="blogposts">
+        <% for(var i =0; i < posts.length; i++) { %>
+        <h2><%= posts[i].title %></h2>
+        
+        <div>By <%= posts[i].author.firstName %></div>
+
+        <p><%- posts[i].content %></p>
+        <% } %>
+    </section>
+
+<% include partials/footer %>
