@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var repo = require("../models/postRepository")
+var repo = require("../models/postRepository");
+repo.loadPosts();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {

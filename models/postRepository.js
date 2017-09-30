@@ -20,8 +20,9 @@ var loadPosts = function loadPosts() {
                     }
 
                     var newPosts = JSON.parse(data);
-                    if (newPosts.lenght > 0) {
+                    if (newPosts.length > 0) {
                         postList = newPosts;
+                        console.log("Loaded! " + postList.length);
                     }
 
                 });
@@ -85,5 +86,5 @@ var repo = {
     writeFile: writeFile,
     loadPosts: loadPosts
 };
-
+loadPosts();
 module.exports = repo;
