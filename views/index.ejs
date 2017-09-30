@@ -26,16 +26,23 @@
                             <%= posts[i].title %>
                         </h2>
 
-                        <div>By
+                        <div>
+                            By:
                             <%= posts[i].author.firstName %>
+                                <%= posts[i].author.lastName %>
+                                    Posting Date:
+                                    <%= posts[i].pubDate %>
+                                        Contact Email:
+                                        <%= posts[i].author.email %>
                         </div>
+
 
                         <p>
                             <%- posts[i].content %>
                         </p>
                         <% } %>
                 </section>
-                
+
             </div>
         </div>
 
