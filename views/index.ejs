@@ -1,20 +1,44 @@
 <% include partials/head %>
 
-    <h1>Blog Posts</h1>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>HTML, CSS, JavaScript and C#/ASP.NET.</h1>
+            <p>Attempting to combine them with mixed results.</p>
+            <br>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/johnmcraig" role="button">View my Portfolio »</a>                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        </div>
+    </div>
 
-<div>
-    <a href="/newpost">Create New Post</a>
-</div>
+    <div class="container">
+        <div class="row">
 
-    <section class="blogposts">
+            <div class="col col-md-4">
+                <h1>Blog Posts</h1>
 
-        <% for(var i =0; i < posts.length; i++) { %>
-        <h2><%= posts[i].title %></h2>
-        
-        <div>By <%= posts[i].author.firstName %></div>
+                <div>
+                    <a href="/newpost">Create New Post</a>
+                </div>
 
-        <p><%- posts[i].content %></p>
-        <% } %>
-    </section>
+                <section class="blogposts">
 
-<% include partials/footer %>
+                    <% for(var i =0; i < posts.length; i++) { %>
+                        <h2>
+                            <%= posts[i].title %>
+                        </h2>
+
+                        <div>By
+                            <%= posts[i].author.firstName %>
+                        </div>
+
+                        <p>
+                            <%- posts[i].content %>
+                        </p>
+                        <% } %>
+                </section>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <% include partials/footer %>

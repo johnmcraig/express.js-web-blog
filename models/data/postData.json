@@ -1,1 +1,21 @@
-[{"id":"testo1","title":"First Post","author":{"firstName":"John","lastName":"Craig","email":"github"},"pubDate":"2017-09-29","content":"<h1>My Fist Post</h1>\r\n<p>This is the first test post for the blog engine using exprss.js.</p>"}]
+[{
+    "id": "testo1",
+    "title": "First Post",
+    "author": {
+        "firstName": "John",
+        "lastName": "Craig",
+        "email": "github"
+    },
+    "pubDate": "2017-09-29",
+    "content": "<h2>My First Post</h2>\r\n<p>This is the first test post for the blog engine using exprss.js.</p>"
+}, {
+    "id": "test02",
+    "title": "Second Blog Post",
+    "author": {
+        "firstName": "John",
+        "lastName": "Craig",
+        "email": "github/johnmcraig.io"
+    },
+    "pubDate": "2017-09-30",
+    "content": "<h2>This is the second blog post!</h2>\r\n<p>Today I added style with CSS and a Jumbotron for the main index page. Exciting!</p>"
+}]
