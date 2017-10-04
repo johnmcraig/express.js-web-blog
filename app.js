@@ -13,6 +13,9 @@ var footer = require('./routes/footer.js');
 var newPost = require('./routes/newPost.js');
 var app = express();
 
+//for Azure deployment to listwn on port 3000
+var port = process.env.port || 3000; 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -46,5 +49,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// set the default port to listen to as: var port "hopefully on 3000 for Azure deploy"
+app.listen(port);
 
 module.exports = app;
