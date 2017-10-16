@@ -54,9 +54,7 @@ var savePosts = function savePosts() {
             writeFile();
         }
     });
-}
-
-loadPosts();
+};
 
 var repo = {
     postCount: postList.length,
@@ -86,5 +84,7 @@ var repo = {
     writeFile: writeFile,
     loadPosts: loadPosts
 };
+
 loadPosts();
+
 module.exports = repo;
