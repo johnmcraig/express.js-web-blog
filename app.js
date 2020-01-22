@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var newPost = require('./routes/newPost.js');
 var app = express();
 
-//for Azure deployment to listwn on port 3000
+//for Azure deployment to listen on port 3000
 var port = process.env.port || 3000; 
 
 // view engine setup
@@ -48,6 +48,8 @@ app.use(function(err, req, res, next) {
 });
 
 // set the default port to listen to as: var port "hopefully on 3000 for Azure deploy"
-app.listen(port);
+app.listen(port, () => {
+  console.log('App is running on port: ' + port);
+});
 
 module.exports = app;
