@@ -1,1 +1,31 @@
-[{"id":"test01","title":"First Post","author":{"firstName":"john","lastName":"craig","email":"git"},"pubDate":"2017-09-30","content":"<h2>Does this work></h2>\r\n<p>testing testing 1 2 3</p>"},{"id":"test02","title":"Second Post","author":{"firstName":"John","lastName":"Craig","email":"github/johnmcraig.io"},"pubDate":"2017-09-30","content":"<h3>Second test Post</h3>\r\n<p>This is the second test post.</p>"}]
+[
+  {
+    "id": "test01",
+    "title": "First Post",
+    "author": { "firstName": "john", "lastName": "craig", "email": "git" },
+    "pubDate": "2017-09-30",
+    "content": "<h2>Does this work></h2>\r\n<p>testing testing 1 2 3</p>"
+  },
+  {
+    "id": "test02",
+    "title": "Second Post",
+    "author": {
+      "firstName": "John",
+      "lastName": "Craig",
+      "email": "github/johnmcraig.io"
+    },
+    "pubDate": "2017-09-30",
+    "content": "<h3>Second test Post</h3>\r\n<p>This is the second test post.</p>"
+  },
+  {
+    "id": "",
+    "title": "Hello 2020!",
+    "author": {
+      "firstName": "Mark",
+      "lastName": "Craig",
+      "email": "non@non.com"
+    },
+    "pubDate": "2020-01-21",
+    "content": "Welcome to 2020 update!"
+  }
+]
